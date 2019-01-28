@@ -43,8 +43,6 @@ class CoffeeButtonState extends State<CoffeeButton> {
   }
 
   Widget alert(String message) {
-    print('hello!');
-    print(message);
     return new Text(
       message,
       style: TextStyle(fontSize: 40.0),
