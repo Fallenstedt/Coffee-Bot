@@ -1,7 +1,7 @@
 import 'package:coffee_bot/env.dart';
 
-void main() => Development();
+void main() => Production();
 
-class Development extends Env {
+class Production extends Env {
   final String url = 'some/slack/url';
 }
