@@ -1,6 +1,6 @@
 # coffee_bot
 
-Have a coffee station at work? Want to alert your team that there is a fresh pot of hot, tasty, delicious coffee ready? With a press of a button, you can send a slack message to your Slack App to alert your them!
+Have a coffee station at work? Want to alert your team that there is a fresh pot of hot, tasty, delicious coffee ready? With a press of a button, you can send a slack message to your Slack App to alert your team!
 
 ![Coffee bot example](./COFFEE_BOT.gif)
 
