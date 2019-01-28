@@ -1,16 +1,11 @@
 # coffee_bot
 
-A new Flutter project.
+Have a coffee station at work? Want to alert your team that there is a fresh pot of hot, tasty, delicious coffee ready? With a press of a button, you can send a slack message to your Slack App to alert your them!
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+- environment configuration files are found in `lib/config`. Create your enviornments from the examples.
+- running `lib/main.dart` uses the Development environment by default
+- run `lib/config/{environment}.dart` to build for the desired environment
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+To build production run `flutter build apk lib/config/production.dart`. Otherwise `flutter run` will start a development enviornment.
