@@ -1,3 +1,8 @@
+#Environment
+**/*/development.dart
+**/*/production.dart
+
+
 # Miscellaneous
 *.class
 *.lock
