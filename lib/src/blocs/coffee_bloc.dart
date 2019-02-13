@@ -9,9 +9,7 @@ class CoffeeBloc {
   Observable<SlackModel> get messageStatus => _messagePoster.stream;
 
   sendMessage() async {
-    print('sending message');
     SlackModel response = await _repository.sendAlert();
-    print(response.message);
     _messagePoster.sink.add(response);
   }
 
@@ -19,5 +17,3 @@ class CoffeeBloc {
     _messagePoster.close();
   }
 }
-
-final coffeeBloc = CoffeeBloc();

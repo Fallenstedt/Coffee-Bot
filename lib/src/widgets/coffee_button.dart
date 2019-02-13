@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
-import '../blocs/coffee_bloc.dart';
+import '../blocs/coffee_provider.dart';
 
 class CoffeeButton extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
+    final bloc = CoffeeProvider.of(context);
+    
     return StreamBuilder(
-        stream: coffeeBloc.messageStatus,
+        stream: bloc.messageStatus,
         builder: (BuildContext context, snapshot) {
           return MaterialButton(
-            onPressed: coffeeBloc.sendMessage,
+            onPressed: bloc.sendMessage,
             height: 50,
             minWidth: 50,
             child: Column(
